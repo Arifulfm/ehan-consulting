@@ -1,0 +1,32 @@
+# Secrets and API keys - never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials.json
+service-account*.json
+client_secret*.json
+token.json
+
+# n8n / automation exports that may contain credentials
+n8n-credentials*.json
+
+# Dependencies and build output
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+build/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
